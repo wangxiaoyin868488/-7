@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  我的微博
+//
+//  Created by 王晓银 on 15/7/27.
+//  Copyright (c) 2015年 王晓银. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIView+Extension.h"
+#import "UIView+Inspectable.h"
+#import "UIBarButtonItem+Extension.h"
+
+//抽取一个颜色的宏、、
+
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+/**
+ *
+ *
+ *  @param r 0-255
+ *  @param g 0-255
+ *  @param b 0-255
+ *  @param a 0.0-1.0
+ *
+ *  @return
+ */
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+/**
+ *  屏幕宽度与高度
+ *
+ */
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+
+
+
+#define kShortVersionStr @"CFBundleShortVersionString"
+
+#endif
